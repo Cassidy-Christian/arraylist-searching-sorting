@@ -7,8 +7,7 @@ public class Search{
         ArrayList<String> haystack=new ArrayList<String>(Arrays.asList(array));  
         System.out.println("Search for a is:"+search(haystack, "a")); 
         System.out.println("Binary Search for a is:"+binarySearch(haystack, "a")); 
-
-        
+      
       
     }
 

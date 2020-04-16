@@ -79,8 +79,21 @@ Insertion--100, 10,000, 1000000
 Selection-- 55, 5050, 500500
 
 
-If you were searching for an element in a random list, would it be reasonable to use one of these algorithms to sort the list first and use binarySearch, or would you be better off using a normal search? Why or why not
-It would still be best to use binary search because you have a better chance of finding the random object no matter the order of the indexes. 
+If you were searching for an element in a random list, would it be reasonable to use one of these algorithms to sort the list first and use binarySearch, or would you be better off using a normal search? Why or why not?
+
+find something not in the list: ---- this is better than the best possible case and binary is still slower. 
+        n:setup step: search step: total:
+binary: 10  10+             3.5       23.5  
+linear: 10  0               5         15
+binary  100 100             6.5        106.6
+linear 100 0                50         50 
+binary 1000  1000           10         1010
+linear 1000 0               500        500
+
+
+If we can not sort the objects beforehand, it would be better just using the linear search method. If we are just searching for one element, it sorting prior and then doing binary search would take longer. 
+
+
 
 
 
